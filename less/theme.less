@@ -1,0 +1,266 @@
+
+//
+// Load core variables and mixins
+// --------------------------------------------------
+@import "fonts.less";
+@import "variables.less";
+@import "mixins.less";
+
+
+
+
+
+body{
+  padding-top: @navbar-height;
+}
+
+.container-fluid{
+  max-width: 1500px;
+}
+
+//
+// Button Styles
+// --------------------------------------------------
+.btn,
+.btn-default,
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger {
+  transition: all 0.2s ease 0s;
+  border-radius: 0;
+  border: none;
+}
+
+.btn-default{
+
+  &:hover{
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+
+
+//
+// Typeography
+// --------------------------------------------------
+
+a{
+  transition: all 0.2s ease 0s;
+  transition: border-bottom 0s;
+  color: @gray-base;
+
+  &:hover{
+    color: @brand-primary;
+    text-decoration: none;
+  }
+}
+
+.fancy{
+  font-family: @font-fancy;
+}
+
+h1, h2, h3, h4, h5{
+  color: @gray-base;
+}
+
+
+//
+// Header Styles
+// --------------------------------------------------
+
+#header{
+  background-color: #fff;
+  text-transform: uppercase;
+  border-bottom: none;
+
+  ul{
+    position: relative;
+  }
+
+  .btn{
+    height: 100%;
+    margin: 0;
+  }
+}
+
+.navbar-brand{
+  background-color: @gray-base;
+  padding: 0;
+
+  img{
+    width: @navbar-height;
+    height: @navbar-height;
+  }
+}
+
+.navbar-right{margin-right: 0;}
+
+.navbar-title{
+  font-family: @font-header;
+  position: relative;
+  float: left;
+  height: $header_height;
+  
+  text-align: center;
+  font-family: @font-header;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0 20px;
+  line-height: 50px;
+  height: $header_height;
+
+}
+
+#nav-main{
+
+  a{
+    background-color: transparent;
+    height: @navbar-height;
+
+    &:hover{
+      border-bottom: #000 solid 4px;
+      background-color: transparent;
+      color: @gray-base;
+    }
+
+    &.active{
+      border-bottom: @brand-primary solid 4px;
+    }
+  }
+}
+
+.bg-default{
+  background: url(../../images/PL-leaf-pattern-light.jpg) fixed;
+}
+
+
+
+//
+// Tile Styles
+// --------------------------------------------------
+.tile-holder{
+  padding: @grid-gutter-width / 2;
+}
+
+.tile{
+  margin-bottom: @grid-gutter-width;
+
+  .inner{
+    -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+    box-shadow: @shadow;
+    background-color: #fff;
+  }
+
+  .image{
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .media{
+    margin-top: 0;
+    padding: 10px;
+    background-color: #e4e4e4;
+
+    p{
+      margin-bottom: 0;
+      font-size: @font-size-small;
+      color: @text-muted;
+    }
+  }
+
+  .media-left{
+    padding-right: 5px;
+
+    img{
+      width: 30px;
+      height: 30px;
+      background-color: @gray-base;
+      border-radius: 15px;
+
+      &:hover{
+        background-color: #fff;
+      }
+    }
+
+    a{
+      display: block;
+      line-height: 0;
+    }
+  }
+  
+  .body{
+    padding: 20px;
+  }
+  
+  h2{
+    margin: 0;
+  }
+
+  h3{
+    text-transform: uppercase;
+    font-size: @font-size-large;
+    margin: 0;
+  }
+
+  .detail + .detail{
+    margin-top: 20px;
+  }
+
+  table{
+    width: 100%;
+    text-align: center;
+
+    td{
+      padding: 5px;
+    }
+  }
+}
+
+.price-table{
+
+  table{
+    width: 100%;
+    text-align: center; 
+
+    thead{
+      border-top: #ddd solid 1px;
+      background-color: #f9f9f9;
+    }
+
+    td,
+    th{
+      padding: 5px;
+      width: 25%;
+    }
+    
+    th{
+      font-weight: normal !important;
+      text-align: center;
+    }
+
+    th + th{
+      border-left: #ddd solid 1px;
+    }
+
+    td + td{
+      border-left: #eee solid 1px;
+    }
+
+    td{
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
+
+
+
+
+
