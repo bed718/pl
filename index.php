@@ -29,7 +29,7 @@
           </button>
 
           <a href="/" class="navbar-brand"><img src="images/PL-leaf-white.svg" alt="Puff Loud Leaf" /></a>
-          <a href="/" class="navbar-title btn btn-default"><span class="fancy">Puff</span>Loud</a>
+          <a href="/" class="navbar-title"><span class="fancy">Puff</span>Loud</a>
         </div> <!-- end navbar-header -->
 
 
@@ -76,6 +76,8 @@
                   <p>Added a product to the menu</p>
                 </div>
               </div>
+
+              
               
               <div class="body">
                 <div class="header detail">
@@ -119,8 +121,9 @@
               </div>
               
 
-              <div class="footer">
-                
+              <div class="actions clearfix">
+                <a href="#" class="btn btn-default push-left"><span class="glyphicon glyphicon-heart"></span> 13 favorites</a>
+                <a href="#" class="btn btn-default push-right"><span class="glyphicon glyphicon-comment"></span> 213 comments</a>
               </div>
 
             </div>

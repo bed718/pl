@@ -35,6 +35,9 @@ body{
 
 .btn-default{
 
+  background-color: @gray-lighter;
+  color: #000;
+
   &:hover{
     background-color: #000;
     color: #fff;
@@ -66,6 +69,10 @@ h1, h2, h3, h4, h5{
   color: @gray-base;
 }
 
+.label{
+  font-weight: normal;
+}
+
 
 //
 // Header Styles
@@ -75,6 +82,8 @@ h1, h2, h3, h4, h5{
   background-color: #fff;
   text-transform: uppercase;
   border-bottom: none;
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+    box-shadow: @shadow;
 
   ul{
     position: relative;
@@ -221,6 +230,26 @@ h1, h2, h3, h4, h5{
       padding: 5px;
     }
   }
+
+  .actions{
+    border-top: #ddd solid 1px;
+    a{
+      width: 50%;
+      float: left;
+      font-size: @font-size-small;
+    }
+  }
+
+  .more{
+    color: @brand-primary;
+    text-transform: uppercase;
+    font-size: @font-size-small;
+    font-family: @font-header;
+    
+    &:hover{
+      color: #000;
+    }
+  }
 }
 
 .price-table{
@@ -259,6 +288,180 @@ h1, h2, h3, h4, h5{
     }
   }
 }
+
+
+//
+// Profile Styles
+// --------------------------------------------------
+
+#profile-header{
+  position: relative;
+  max-height: 600px;
+  width: 100%;
+
+  .container-fluid{
+    position: relative;
+  }
+
+  .inner{
+    position: relative;
+  }
+
+  .bg-images{
+    width: 100%;
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .profile-image{
+    
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 75px;
+    float: left;
+    z-index: 100;
+    bottom: -60px;
+    left: -20px;
+
+    img{
+      -webkit-box-shadow: @shadow-profile; // iOS <4.3 & Android <4.1
+      box-shadow: @shadow-profile;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .gradient-overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20vh;
+  }
+
+  .profile-image,
+  .info,
+  .social-actions{
+    position: absolute;
+  }
+
+  .info{
+    left: 155px;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  h1{
+    font-weight: normal;
+    font-family: @font-fancy;
+    margin: 0 0 5px;
+
+    a{
+      color: #fff;
+
+      &:hover{
+        color: @brand-primary;
+      }
+    }
+  }
+
+  .rating{
+    float: left;
+    font-size: 18px;
+    margin-right: 20px;
+    
+    span{
+      color: #fff;
+    }
+
+    .active{
+      color: @brand-primary;
+    }
+  }
+
+  .type{
+    a{
+      color: #fff;
+      text-transform: uppercase;
+
+      &:hover{
+        color: @brand-primary;
+      }
+    }
+  }
+
+  .social-actions{
+    bottom: 0;
+    right: 0;
+  }
+}
+
+#profile-main{
+  margin-bottom: 40px;
+}
+
+#profile-nav{
+  background-color: @gray-lighter;
+  padding-left: 155px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+#profile-body{
+
+  h2{
+    margin: 0 0 10px;
+    text-transform: uppercase;
+  }
+
+  .detail{
+    margin-bottom: 20px;
+  }
+
+  .phone{
+    font-size: @font-size-large;
+  }
+
+  .status{
+    font-size: @font-size-large;
+    color: @gray-base;
+  }
+
+  .label{
+    padding: 0;
+    border-radius: 0;
+    font-size: 100%;
+    margin-right: 5px;
+  }
+}
+
+
+
+//
+// Helper Styles
+// --------------------------------------------------
+.bg-light{
+  background-color: #fff;
+  padding: 40px;
+}
+
+.gradient-overlay{
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.8)));
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 );
+}
+
+
 
 
 
