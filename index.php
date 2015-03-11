@@ -55,11 +55,13 @@
     <section class="jumbotron bg-default">
       <div class="container">
         <h1 class="text-center">{ header stuff }</h1>
+        <h3 class="text-center">{goes here}</h3>
       </div>
     </section>
 
     <section class="container-fluid">
       <div class="row tile-holder">
+
         <div class="tile col-lg-3 col-md-4 col-sm-6 col-xs-12">
             <div class="inner">
             

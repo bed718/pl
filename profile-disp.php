@@ -21,7 +21,7 @@
     <header id="header" class="navbar navbar-fixed-top" role="banner">
       <div class="">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-contents">
+          <button type="button" class="navbar-toggle btn btn-default" data-toggle="collapse" data-target="#navbar-contents">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -59,7 +59,7 @@
             <img src="/images/profile-header-bg-test.jpg">
             <div class="gradient-overlay"></div>
           </div>
-          <div class="profile-image"><img src="/images/profile-test.jpg" class="img-circle"></div>
+          <div class="profile-image"><a href=""><img src="/images/profile-test.jpg" class="img-circle"></a></div>
           <div class="info clearfix">
             <h1><a href="#">Nature’s Medicines</a></h1>
             <div class="rating">
@@ -78,7 +78,7 @@
               <a href="" class="icon-"></a>
               <a href="" class="icon-"></a>
             </div>
-            <a href="" class="btn btn-primary">+follow</a>
+            <a href="" class="btn btn-primary btn-lg">+follow</a>
           </div>
         </div>
       </div>
@@ -99,7 +99,7 @@
 
           <div id="profile-body" class="bg-light">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-sm-5">
                 <h2>The Overview</h2>
                 <div class="address detail">11503 Burbank Blvd <br />
     Los Angeles, CA</div>
@@ -119,10 +119,10 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-8">
-                <div class="map"><img src="" alt=""></div>
+              <div class="col-sm-7">
+                <div class="map"><img src="/images/map-test.jpg" alt=""></div>
                 <div class="dir">
-                  <div class="btn btn-default">directions</div>
+                  <a class="btn btn-default btn-lg"> Get Directions</a>
                 </div>
               </div>
             </div>
